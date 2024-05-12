@@ -1,0 +1,92 @@
+.footer {
+  margin-inline: auto;
+
+  &__content {
+    max-width: 144rem;
+    margin-inline: auto;
+    padding-inline: $padding-inline-desktop;
+    padding-block: 2.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3rem;
+
+    &__section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    &__links {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+      text-decoration: none;
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        color: $color-black;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &__contacts {
+      display: flex;
+      flex-direction: column;
+      font-style: normal;
+      gap: 0.8rem;
+
+      a {
+        color: rgba($color-black, 0.6);
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &__subscribe__form {
+    display: flex;
+    gap: 3rem;
+    font-family: "Outfit", sans-serif;
+  }
+
+  &__subscribe__input {
+    display: flex;
+    font-family: inherit;
+    border: none;
+    border-bottom: 1px solid $color-primary;
+    padding-block: 1.1rem;
+    padding-inline: 0 1.6rem;
+    flex: 0 1 30rem;
+  }
+
+  &__subscribe__button {
+    padding: 1.1rem 4rem;
+    width: fit-content;
+    border: none;
+    border: 1px solid $color-primary;
+    background-color: $color-primary;
+    color: $color-white;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $color-black;
+    }
+  }
+
+  &__payments {
+    display: flex;
+    align-items: center;
+    gap: 3.6rem;
+  }
+}

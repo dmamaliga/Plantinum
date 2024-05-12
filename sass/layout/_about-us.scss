@@ -1,0 +1,55 @@
+.about-us {
+  max-width: 144rem;
+  padding-inline: $padding-inline-desktop;
+  margin-inline: auto;
+  padding-block: 8rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+
+  &__card {
+    display: flex;
+    background-color: $color-primary;
+    border-radius: 0.2rem;
+    overflow: hidden;
+    padding: 2.4rem;
+    gap: 1.8rem;
+    flex: 1;
+    color: $color-white;
+    transition: all 0.3s;
+    cursor: pointer;
+    min-width: 50rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      min-width: 100%;
+    }
+
+    &__image {
+      height: 23rem;
+      width: 18rem;
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &__link {
+      color: inherit;
+      width: fit-content;
+
+      &:hover {
+        color: $color-secondary;
+      }
+    }
+
+    &:hover {
+      transform: translateY(-0.5rem);
+      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+  }
+}

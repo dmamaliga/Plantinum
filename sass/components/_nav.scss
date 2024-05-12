@@ -1,0 +1,82 @@
+.nav {
+  max-width: 144rem;
+  margin-inline: auto;
+  margin-block: 1.6rem;
+  padding-inline: 6.4rem;
+  display: flex;
+  align-items: center;
+  gap: 7.7rem;
+
+  &__logo {
+    width: 3.4rem;
+    height: 3.4rem;
+  }
+
+  &__links {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      padding-inline: 1.6rem;
+      border-right: 1px solid $color-black;
+
+      &:last-child {
+        border: none;
+      }
+    }
+
+    @media only screen and (max-width: $bp-largest) {
+      display: none;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-black;
+    transition: all 0.2s;
+
+    &:focus,
+    &:hover {
+      color: $color-secondary;
+    }
+  }
+
+  &__search {
+    margin-inline-start: auto;
+    border: 2px solid $color-primary;
+    display: flex;
+
+    @media only screen and (max-width: $bp-large) {
+      display: none;
+    }
+
+    &__input {
+      padding: 1.1rem 1.6rem;
+      border: none;
+      color: $color-primary;
+      width: 37.6rem;
+      font-family: "Outfit", sans-serif;
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 2.6rem;
+
+      &::placeholder {
+        color: $color-secondary;
+      }
+    }
+
+    &__button {
+      width: 4.8rem;
+      background-color: $color-primary;
+      border: none;
+      cursor: pointer;
+    }
+
+    &__icon {
+      height: 1.9rem;
+      width: 1.9rem;
+    }
+  }
+}

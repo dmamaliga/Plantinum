@@ -1,0 +1,65 @@
+.hero {
+  background-color: $color-grey-1;
+
+  &__content {
+    max-width: 144rem;
+    padding-inline: $padding-inline-desktop;
+    padding-block: 2.4rem;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.2rem;
+      color: $color-primary;
+      flex: 1;
+      min-width: 30rem;
+
+      h1 {
+        margin-block-end: 3.6rem;
+      }
+
+      p {
+        color: $color-black;
+      }
+    }
+  }
+
+  &__image {
+    flex: 1;
+    position: relative;
+    height: 64.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 30rem;
+
+    img {
+      position: absolute;
+      object-fit: contain;
+      max-width: 100%;
+    }
+  }
+
+  &__button {
+    margin-block-start: 2.4rem;
+    padding: 1.1rem 6.3rem;
+    width: fit-content;
+    border: none;
+    background-color: $color-primary;
+    color: $color-white;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: translateY(-0.5rem);
+    }
+  }
+}
