@@ -10,9 +10,8 @@
     margin-inline: auto;
     padding-inline: $padding-inline-desktop;
 
-    & > p {
-      @media only screen and (max-width: $bp-largest) {
-      }
+    @media only screen and (max-width: $bp-medium) {
+      padding-inline: $padding-inline-mobile;
     }
   }
 

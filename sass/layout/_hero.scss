@@ -12,14 +12,17 @@
     flex-wrap: wrap;
     gap: 1.8rem;
 
+    @media only screen and (max-width: $bp-medium) {
+      padding-inline: $padding-inline-mobile;
+    }
+
     &__text {
       display: flex;
       flex-direction: column;
       justify-content: center;
       gap: 1.2rem;
       color: $color-primary;
-      flex: 1;
-      min-width: 30rem;
+      flex: 1 1 30rem;
 
       h1 {
         margin-block-end: 3.6rem;
@@ -38,7 +41,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 30rem;
+    flex: 1 1 30rem;
 
     img {
       position: absolute;

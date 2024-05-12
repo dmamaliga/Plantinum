@@ -9,6 +9,10 @@
   align-items: center;
   gap: 1.8rem;
 
+  @media only screen and (max-width: $bp-medium) {
+    padding-inline: $padding-inline-mobile;
+  }
+
   &__card {
     display: flex;
     background-color: $color-primary;
@@ -24,17 +28,24 @@
 
     @media only screen and (max-width: $bp-medium) {
       min-width: 100%;
+      flex-wrap: wrap;
     }
 
     &__image {
       height: 23rem;
       width: 18rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        width: 100%;
+        object-fit: cover;
+      }
     }
 
     &__text {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      gap: 1rem;
     }
 
     &__link {

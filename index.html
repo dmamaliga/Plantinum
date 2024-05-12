@@ -27,7 +27,18 @@
           <li><a href="." class="link nav__link">Contact Us</a></li>
           <li><a href="." class="link nav__link">Blog</a></li>
           <li><a href="." class="link nav__link">Site Map</a></li>
-          <li><a href="." class="link nav__link">Eng</a></li>
+          <li>
+            <select
+              name="language"
+              id="language"
+              class="link nav__select"
+              aria-label="language"
+            >
+              <option value="Eng" selected>Eng</option>
+              <option value="Rus">Rus</option>
+              <option value="Ro">Ro</option>
+            </select>
+          </li>
         </ul>
 
         <form class="nav__search" action="#" method="GET">
@@ -206,16 +217,30 @@
                       id="email"
                       name="email"
                       class="form__input"
+                      placeholder="example@gmail.com"
                       required
                     />
                   </div>
                   <div class="form-group">
                     <label for="phone" class="body-1 form__label">Phone</label>
+
+                    <select
+                      name="prefix"
+                      id="prefix"
+                      class="link form__select"
+                      aria-label="prefix"
+                    >
+                      <option value="+373" selected>+373</option>
+                      <option value="+40">+40</option>
+                      <option value="+32">+32</option>
+                    </select>
+
                     <input
                       type="tel"
                       id="phone"
                       name="phone"
-                      class="form__input"
+                      class="form__input form__input__phone"
+                      placeholder="00 000 00 00"
                       required
                     />
                   </div>
