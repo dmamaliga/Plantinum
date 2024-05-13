@@ -4,8 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "npm run sass & vite",
-    "sass": "sass --watch sass/main.scss:dist/css/main.css --style compressed",
+    "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
